@@ -109,11 +109,16 @@ body {
     display: flex;
 }
 
-.video {
+.video__player {
     display: flex;
-    border: 1px solid #445161;
-    ;
-    margin: 50px 50px 50px;
+    border: 3px solid #445161;
+    max-width: 430px;
+    min-height: 245px;
+    background-color: black;
+}
+
+.video-box {
+    padding: 50px
 }
 
 .aboutYour {
@@ -208,7 +213,13 @@ body {
     width: 359px;
 }
 
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .reviews-h2 {
+    width: 100%;
     color: #445161;
     font-size: 30px;
     font-weight: 400;
@@ -216,28 +227,32 @@ body {
     text-align: center;
 }
 
-.reviews-item{
-    width: 50%;
-    padding: 30px 50px 10px 180px;
-    margin:  0;
-    box-sizing: border-box;
-    position: relative;
-    background-image: url(/img/bg_review.png);
-    background-repeat: no-repeat;
-    background-position:  right center;
-    top: -10px;
-    opacity: .7;
-
-    
-    
+.reviews-subtxt {
+    padding-top: 15px;
+    color: #989898;
 }
 
-.reviews-item:before{
-     display: block;
+.reviews-txt {
+    background-color: #ebebeb;
+    border-radius: 4px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.reviews-item {
+    width: 50%;
+    padding: 12px 15px 12px 119px;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.reviews-item:before {
+    display: block;
     position: absolute;
     content: '';
-    top: 30px;
-    left: 60px;
+    top: 12px;
+    left: 15px;
     width: 75px;
     height: 75px;
     border-radius: 50px;
@@ -246,10 +261,103 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-.reviews-item:after{
-?????????????????????????????????
+
+.reviews-item:after {
+    display: block;
+    position: absolute;
+    content: '';
+    border: 11px solid transparent;
+    border-right-color: #ebebeb;
+    border-left: none;
+    top: 30px;
+    left: 108px;
 }
 
+.buy-h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #445161;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px
+}
+
+.standart-h3 {
+    padding: 16px 105px;
+    margin: 0;
+}
+
+.sale-package {
+    width: 30%;
+    background-color: #445162;
+    border-radius: 7px;
+    position: relative;
+}
+
+.zlo-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.price {
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.price-txt {
+    color: #445162;
+    font-family: "Arial MT";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 18px 107px;
+}
+
+.package-h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.buy-list {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+}
+
+.list-wrap {
+    padding: 19px 38px 17px 20px;
+    margin: 0;
+}
+
+.buy-botton {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    max-width: 262px;
+    min-height: 43px;
+    border: none;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 5px 15px;
+    display: block;
+}
+
+.button-box {
+    padding: 19px;
+    box-sizing: border-box;
+}
 
 .footer-caption {
     text-align: center;
@@ -369,3 +477,34 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/*here css for videopage*/
+.video-backgrnd {
+    position: fixed;
+    z-index: 2;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ 
+
+}
+.container-video {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.video-one-player{
+  width: 100%;
+    height: 100%;
+}
+
+.h1-title,.p-title{
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+}
+
+
