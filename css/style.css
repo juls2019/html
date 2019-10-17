@@ -109,11 +109,16 @@ body {
     display: flex;
 }
 
-.video {
+.video__player {
     display: flex;
-    border: 1px solid #445161;
-    ;
-    margin: 50px 50px 50px;
+    border: 3px solid #445161;
+    max-width: 430px;
+    min-height: 245px;
+    background-color: black;
+}
+
+.video-box {
+    padding: 50px
 }
 
 .aboutYour {
@@ -283,16 +288,17 @@ body {
     margin: 0;
 }
 
-.sale-package{
+.sale-package {
     width: 30%;
     background-color: #445162;
     border-radius: 7px;
-    position: relative;     
+    position: relative;
 }
-.zlo-wrap{
+
+.zlo-wrap {
     display: flex;
     align-items: flex-end;
-    justify-content:space-around;
+    justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -327,7 +333,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .list-wrap {
@@ -345,12 +351,14 @@ body {
     text-transform: uppercase;
     margin: 0 auto;
     padding: 5px 15px;
-        display: block;
+    display: block;
 }
-.button-box{
+
+.button-box {
     padding: 19px;
     box-sizing: border-box;
 }
+
 .footer-caption {
     text-align: center;
     color: #ffffff;
@@ -469,3 +477,34 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/*here css for videopage*/
+.video-backgrnd {
+    position: fixed;
+    z-index: 2;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ 
+
+}
+.container-video {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.video-one-player{
+  width: 100%;
+    height: 100%;
+}
+
+.h1-title,.p-title{
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+}
+
+
